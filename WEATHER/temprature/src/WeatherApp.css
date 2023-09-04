@@ -1,0 +1,12 @@
+.temp{display: flex;
+    justify-content: center;
+
+    /* align-items: center; */
+    background-image: url('https://images.pexels.com/photos/186980/pexels-photo-186980.jpeg?cs=srgb&dl=pexels-tahir-shaw-186980.jpg&fm=jpg');
+    border: 2px solid black;
+    border-radius:8px;
+    box-shadow: inset;
+    
+
+    
+}
