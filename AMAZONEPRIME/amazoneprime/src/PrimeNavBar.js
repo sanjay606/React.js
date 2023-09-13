@@ -1,6 +1,7 @@
 import React from 'react'
 import SearchIcon from '@mui/icons-material/Search';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+import { Link } from 'react-router-dom';
 
 const PrimeNavBar = () => {
   return (
@@ -8,15 +9,15 @@ const PrimeNavBar = () => {
     <div ><img className='logo' src='https://m.media-amazon.com/images/G/01/digital/video/web/Logo-min.png'></img>
     </div>
     <div className="navbar">
-    <li ><a href='#'></a>Home</li>
-    <li ><a href='#'></a>Store</li>
-    <li ><a href='#'></a>Live TV</li>
-    <li ><a href='#'></a>Catagories</li>
+    <li ><Link to='/'>Home</Link></li>
+    <li ><Link to='/Store'>Store</Link></li>
+    <li ><Link href='/Live TV'></Link>Live TV</li>
+    <li ><Link href='/Catagories'></Link>Catagories</li>
    <div  className='search-1'> <h2><SearchIcon fontSize="large"/></h2></div>
    <div className='try'>
-    <li ><a href='#'></a>Try for free</li>
+    <li ><Link to='/'></Link>Try for free</li>
     </div>
-   <div className='en'> <li ><a href='#'></a>EN</li></div>
+   <div className='en'> <li ><Link to='/'></Link>EN</li></div>
    <div><AccountCircleIcon className='logo-2' color="primary"  sx={{ fontSize: 32 }}/>
    </div>
    

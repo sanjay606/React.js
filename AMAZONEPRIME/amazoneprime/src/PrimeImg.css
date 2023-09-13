@@ -66,6 +66,9 @@ padding: 0%;
   font-size: 25px;
   padding: 0px 15px;
  } 
+ .navbar li a{text-decoration: none;
+
+ }
  .search-1{
   position: absolute;
   top: 2px;
@@ -84,7 +87,7 @@ padding: 0%;
 }
 .logo-2{position: absolute;
   top: 2px;
-  right: 14%;
+  right: 12%;
 
 }
  

@@ -9,12 +9,22 @@ import './App.css';
 // import { Route } from '@mui/icons-material';
 import './PrimeImg.css';
 import Home from './Home';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import PrimeLoginPage from './Pages/PrimeLoginPage';
 
 function App() {
   return (
-<browserRouter>
-</browserRouter>
-    <Home/>
+    <BrowserRouter>
+    
+    
+    <Routes>
+      <Route path="/" element={<Home/>}/>
+      <Route path="/store" element={<PrimeLoginPage/>}/>
+      </Routes>
+  
+    
+  </BrowserRouter>
+
  
   )
 }
