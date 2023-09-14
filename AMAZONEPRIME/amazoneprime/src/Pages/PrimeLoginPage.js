@@ -1,51 +1,83 @@
-import React, { useState } from 'react';
+// import React, { useState } from 'react';
 
-function PrimeLoginPage() {
-  const [username, setUsername] = useState('');
-  const [password, setPassword] = useState('');
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
+import React, { useState } from "react";
 
-  const handleLogin = () => {
-    // In a real application, you would send a POST request to your backend for authentication.
-    // For this example, we'll simply check if the username and password are not empty.
-    if (username !== '' && password !== '') {
-      setIsLoggedIn(true);
-    }
+const PrimeLoginPage = () => {
+  const [Data, SetFullData] = useState({
+    Name: "",
+    LName: "",
+    Email: "",
+    Mobile: "",
+  });
+
+  const HandleChange = (e) => {
+    const { name, value } = e.target;
+    console.log(e.target.name);
+    SetFullData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
   };
-
-  const handleLogout = () => {
-    setIsLoggedIn(false);
-    setUsername('');
-    setPassword('');
+  const HandleSubmit = (e) => {
+    e.preventDefault();
+    console.log(Data);
   };
-
   return (
-    <div className="App">
-      {isLoggedIn ? (
+    <div className="container">
+      <div ><img className="photo" src="https://m.media-amazon.com/images/G/01/digital/video/avod/AV_Logo_150._CB430404026_.png"></img></div>
+      <div className="Container-1">
+
+      <div className="sin"><h1> Sing in</h1></div>&nbsp;
+      
+      <form  onSubmit={HandleSubmit}>
         <div>
-          <h2>Welcome, {username}!</h2>
-          <button onClick={handleLogout}>Logout</button>
-        </div>
-      ) : (
-        <div>
-          <h2>Login</h2>
+        <label>Name:</label>
           <input
             type="text"
-            placeholder="Username"
-            value={username}
-            onChange={(e) => setUsername(e.target.value)}
+            name="Name"
+            value={Data.Name}
+            onChange={HandleChange}
+            placeholder="Enter your name"
           />
-          <input
-            type="password"
-            placeholder="Password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-          />
-          <button onClick={handleLogin}>Login</button>
         </div>
-      )}
+
+        <div>
+        <label>LName:</label>
+          <input
+            type="text"
+            name="LName"
+            value={Data.LName}
+            onChange={HandleChange}
+            placeholder="Enter your LName"
+          />
+        </div>
+
+        <div>
+          <label>Email:</label>
+          <input
+            type="text"
+            name="Email"
+            value={Data.Email}
+            onChange={HandleChange}
+            placeholder="Enter your Email"
+          />
+        </div>
+
+        <div>
+        <label>Mobile:</label>
+          <input
+            type="text"
+            name="Mobile"
+            value={Data.Mobile}
+            onChange={HandleChange}
+            placeholder="Enter your Mobile"
+          />
+        </div>
+        <button className="btn" type="submit">Submit</button>
+        </form>
+        </div>
     </div>
   );
-}
+};
 
 export default PrimeLoginPage;

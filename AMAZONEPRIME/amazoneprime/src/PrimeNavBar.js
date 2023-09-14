@@ -9,10 +9,10 @@ const PrimeNavBar = () => {
     <div ><img className='logo' src='https://m.media-amazon.com/images/G/01/digital/video/web/Logo-min.png'></img>
     </div>
     <div className="navbar">
-    <li ><Link to='/'>Home</Link></li>
+    <li ><Link to='/home'>Home</Link></li>
     <li ><Link to='/Store'>Store</Link></li>
-    <li ><Link href='/Live TV'></Link>Live TV</li>
-    <li ><Link href='/Catagories'></Link>Catagories</li>
+    <li ><Link to='/Live TV'>Live TV</Link></li>
+    <li ><Link to='/Catagories'>Catagories</Link></li>
    <div  className='search-1'> <h2><SearchIcon fontSize="large"/></h2></div>
    <div className='try'>
     <li ><Link to='/'></Link>Try for free</li>

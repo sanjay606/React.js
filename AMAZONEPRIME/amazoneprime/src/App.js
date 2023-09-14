@@ -11,6 +11,7 @@ import './PrimeImg.css';
 import Home from './Home';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import PrimeLoginPage from './Pages/PrimeLoginPage';
+import Error from './Pages/Error';
 
 function App() {
   return (
@@ -18,8 +19,9 @@ function App() {
     
     
     <Routes>
-      <Route path="/" element={<Home/>}/>
-      <Route path="/store" element={<PrimeLoginPage/>}/>
+      <Route path="/" element={<Home/>} />
+      <Route path="/home" element={<PrimeLoginPage/>} />
+      <Route path="/*" element={<Error/>} />
       </Routes>
   
     
