@@ -1,0 +1,183 @@
+/* *{
+  margin: 0%;
+  padding: 0%;
+ 
+} */
+
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.head{
+
+  display:flex ;
+  justify-content: center;
+   flex-wrap: wrap; 
+   justify-content: space-around;
+   margin: 25px;
+} 
+
+
+ .btn-1 { 
+  display: flex;
+justify-content: center;
+align-items: center; 
+margin: 15px;
+
+
+
+
+}
+.btn-1 button{
+  margin: 10px;
+  border-radius: 6px;
+  background-color: #61dafb;
+
+}
+.container-2{ 
+  height:100vh;
+  /* width: 100%; */
+
+}
+.container-2 img{
+  height: 100vh;
+  width: 100%;
+  
+
+}
+.title-1{
+  position: absolute;
+  top: 35%;
+  left: 26%;
+  color: #f8f9fc;
+  font-size: 2rem;
+
+
+
+
+}
+.title-1 h2{
+  font-size: 4rem;
+
+
+
+}
+.title-1 input{
+  
+  border-radius: 10px;
+  align-items: center;
+  font-size: 26px;
+}
+.logo{
+  width: 100px; 
+  color: antiquewhite;
+  background-color: #282c34;
+border-radius: 8px;
+margin-right: 100px;
+}
+.shop{
+  position: absolute;
+  top: 15px;
+  right: 10%;
+  word-spacing: 30px;
+
+}
+.src{
+  position: absolute;
+  top: 15px;
+  right:7%;
+  word-spacing: 30px;
+}
+
+ .con-1{
+  height: 100vh;
+ 
+ }
+
+.img-1 img{ 
+  height: 100vh;
+  width: 100%;
+  margin-bottom: 15px;
+
+}
+.dis{ color: #0aab1a;
+
+}
+.hey{ position: relative;
+  top:-600px;
+  left:-28%;
+
+  
+
+}
+.con-1 button{ border-radius: 10px;
+  background-color: #0aab1a;
+
+}
+.con-1{ 
+  box-sizing: border-box;
+
+}
+.container-4{ 
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  /* flex-wrap: wrap; */
+  height:135vh ;
+  background-color: #051922;
+  margin-top: 5%;
+  color: #f8f9fc;
+
+}
+.container-4 li{
+  list-style: none;
+
+}
+.container-4 input{
+  border-radius: 10px;
+
+}
+.thodaimg{ margin:20px;
+
+}
+.body{ background-color: #051922;
+
+}
+
+
+
