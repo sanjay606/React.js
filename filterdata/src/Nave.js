@@ -8,20 +8,15 @@ import SearchIcon from '@material-ui/icons/Search';
 import Badge from 'react-bootstrap/Badge';
 import { Link } from 'react-router-dom';
 import  { useState } from 'react';
+import { add } from './redux/features/cartSlice';
+import { useSelector } from 'react-redux';
 // import { Link } from 'react-router-dom';
 
 
 const Nave = () => {
- 
 
- 
-    const [count, setCount] = useState(0);
-  
-    const incrementCount = (count) => {
-      setCount(count + 1);
-    };
-  
-   
+  const cartItems = useSelector((state) => state.cart);
+  const total = cartItems.reduce((total,item)=>total+item.quantity,0);
   
   return (
     <Navbar expand="lg" className="body">
@@ -47,7 +42,7 @@ const Nave = () => {
                 Separated link
               </NavDropdown.Item>
             </NavDropdown>
-            <div className='shop-1'><Link onClick={incrementCount} to="/cart"><ShoppingCartIcon/><Badge bg="secondary">{count}</Badge></Link></div>
+            <div className='shop-1'><Link to="/cart"><ShoppingCartIcon/><Badge bg="secondary">{total}</Badge></Link></div>
             
             <div className='src'><SearchIcon/></div>
           </Nav>

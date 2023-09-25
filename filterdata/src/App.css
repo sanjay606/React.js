@@ -10,11 +10,14 @@
   align-items: center;
   flex-wrap: wrap;
   margin-top:3%;
+  /* margin-inline: -8px; */
+
 
 }
 .bttt button:hover{--bs-btn-hover-bg: rgb(2, 105, 2);
 }
- .red button:hover{--bs-btn-hover-bg: red;
+ .red:hover{
+  background-color: red;
 }
 
 .head{

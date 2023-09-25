@@ -4,11 +4,18 @@ import Button from "react-bootstrap/Button";
 // import data from "../data";
 import Card from "react-bootstrap/Card";
 import { add, remove } from "./redux/features/cartSlice";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 // import { Link } from "react-router-dom";
 // import Allcard from "./utils/Allcard";
 
 function CardItems({ activeCategory, items }) {
+  const cartItems = useSelector((state) => state.cart);
+  
+const getTotalQuantity=(Productid)=>{
+  const cardItem= cartItems.find((item) => item.id === Productid);
+  return cardItem?cardItem.quantity:0;
+};
+
   const dispatch = useDispatch();
 
   const addtoCart = (item) => {
@@ -31,12 +38,13 @@ function CardItems({ activeCategory, items }) {
               <Card.Body className="bttt">
                 <Card.Title>{item.title}</Card.Title>
                 <Card.Text>{item.desc}</Card.Text>
-                <div className="card-read">Read{item.quantity}</div>
+                <div className="card-read">Total {getTotalQuantity(item.id)}</div>
                 <Button className="green" onClick={() => addtoCart(item)}>
                   {item.btn}
                 </Button>
-               &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                <Button onClick={() => removeFromCart(item.id)}>
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp;
+                <Button className="red" onClick={() => removeFromCart(item.id)}>
                   {item.btn1}
                 </Button>
               </Card.Body>
