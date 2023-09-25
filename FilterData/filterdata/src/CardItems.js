@@ -10,7 +10,11 @@ import { useDispatch, useSelector } from "react-redux";
 
 function CardItems({ activeCategory, items }) {
   const cartItems = useSelector((state) => state.cart);
-  const total = cartItems.reduce((total, item) => total + item.quantity, 0);
+  
+const getTotalQuantity=(Productid)=>{
+  const cardItem= cartItems.find((item) => item.id === Productid);
+  return cardItem?cardItem.quantity:0;
+};
 
   const dispatch = useDispatch();
 
@@ -34,13 +38,13 @@ function CardItems({ activeCategory, items }) {
               <Card.Body className="bttt">
                 <Card.Title>{item.title}</Card.Title>
                 <Card.Text>{item.desc}</Card.Text>
-                <div className="card-read">Tolal {total}</div>
+                <div className="card-read">Total {getTotalQuantity(item.id)}</div>
                 <Button className="green" onClick={() => addtoCart(item)}>
                   {item.btn}
                 </Button>
                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                 &nbsp; &nbsp; &nbsp;
-                <Button onClick={() => removeFromCart(item.id)}>
+                <Button className="red" onClick={() => removeFromCart(item.id)}>
                   {item.btn1}
                 </Button>
               </Card.Body>
