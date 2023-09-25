@@ -295,8 +295,9 @@ color: rgb(160, 171, 167)
   align-items: center; */
 /* position: absolute; */
 margin-left: 2%;
-font-size: 25px;
-padding-top:3% ;
+font-size: 15px;
+padding-top:3%;
+padding-right:130px ;
 
 }
 .btn{ 
@@ -312,3 +313,19 @@ padding-top:3% ;
   right:-35%;
 
 }
+.welcome button a{
+  color: #ffffff;
+  text-decoration: none;
+  } 
+ .btn-1 { margin-top: 3%;
+
+  }
+ .btn-2 { margin-top: 3%;
+
+  }
+ .btn-3 { margin-top: 3%;
+
+  }
+ .btn-4 { margin-top: 3%;
+
+  }

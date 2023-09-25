@@ -5,11 +5,21 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import SearchIcon from '@material-ui/icons/Search';
+import Badge from 'react-bootstrap/Badge';
+import { Link } from 'react-router-dom';
+import  { useState } from 'react';
+import { add } from './redux/features/cartSlice';
+import { useSelector } from 'react-redux';
+// import { Link } from 'react-router-dom';
 
 
 const Nave = () => {
+
+  const cartItems = useSelector((state) => state.cart);
+  const total = cartItems.reduce((total,item)=>total+item.quantity,0);
+  
   return (
-    <Navbar expand="lg" className="bg-body-tertiary">
+    <Navbar expand="lg" className="body">
       <Container className='con'>
         <Navbar.Brand className='logo' href="#home">Zomato</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -32,8 +42,8 @@ const Nave = () => {
                 Separated link
               </NavDropdown.Item>
             </NavDropdown>
-            <div className='shop'><ShoppingCartIcon/>
-            </div>
+            <div className='shop-1'><Link to="/cart"><ShoppingCartIcon/><Badge bg="secondary">{total}</Badge></Link></div>
+            
             <div className='src'><SearchIcon/></div>
           </Nav>
         </Navbar.Collapse>
@@ -42,4 +52,4 @@ const Nave = () => {
   )
 }
 
-export default Nave
+export default Nave ;

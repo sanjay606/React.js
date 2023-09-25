@@ -1,5 +1,6 @@
 import React from "react";
 import "./PrimeImg.css";
+import { Link } from "react-router-dom";
 const PrimeImage = () => {
   return (
     <div>
@@ -13,7 +14,7 @@ const PrimeImage = () => {
         <p className="">
           Watch the latest movies, TV shows, and award-winning Amazon Originals
         </p>
-        <button className="btn-1">Sign in to join Prime</button>
+        <button className="btn-1"><Link to="/Sign in to join prime"><h4> Sign in to join Prime </h4></Link></button>
       </div>
       </div>
 <div>

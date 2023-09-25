@@ -27,7 +27,7 @@ const PrimeLoginPage = () => {
       <div ><img className="photo" src="https://m.media-amazon.com/images/G/01/digital/video/avod/AV_Logo_150._CB430404026_.png"></img></div>
       <div className="Container-1">
 
-      <div className="sin"><h1> Sing in</h1></div>&nbsp;
+      <div className="sin"><h1> Sign in</h1></div>&nbsp;
       
       <form  onSubmit={HandleSubmit}>
         <div>
@@ -37,7 +37,7 @@ const PrimeLoginPage = () => {
             name="Name"
             value={Data.Name}
             onChange={HandleChange}
-            placeholder="Enter your name"
+           className="" placeholder="Enter your name"
           />
         </div>
 

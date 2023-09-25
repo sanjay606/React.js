@@ -20,7 +20,7 @@ function App() {
     
     <Routes>
       <Route path="/" element={<Home/>} />
-      <Route path="/home" element={<PrimeLoginPage/>} />
+      <Route path="/Sign in to join prime" element={<PrimeLoginPage/>} />
       <Route path="/*" element={<Error/>} />
       </Routes>
   
