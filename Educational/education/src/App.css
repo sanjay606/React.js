@@ -1,0 +1,271 @@
+*{
+  margin: 0%;
+  padding: 0%;
+  /* border: 2px solid black; */
+}
+
+ .cr{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top:3%;
+
+}
+.cr img{ 
+  width: 250px;
+}
+.bttt button:hover{--bs-btn-hover-bg: rgb(2, 105, 2);
+}
+ .red:hover{
+  background-color: red;
+}
+ 
+.head{
+  display:flex ;
+  justify-content: center;
+   flex-wrap: wrap; 
+   justify-content: space-around;
+   margin: 25px;
+} 
+.btn-1 { 
+  display: flex;
+justify-content: center;
+align-items: center; 
+margin: 15px;
+
+}
+.btn-1 button{
+  margin: 10px;
+  border-radius: 6px;
+  background-color: #61dafb;
+  width: 120px;
+  height: 40px;
+}
+.container-2{ 
+  height:100vh;
+  width: 100%;
+  color: black;
+}
+.container-2 img{
+  height: 100vh;
+  width: 100%;
+}
+.title-1{
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  color: #f8f9fc;
+  font-size: 2rem;
+  color: black;
+}
+.title-1 h2{
+  font-size: 4rem;
+}
+.title-1 input{
+  background-color: #d6e1e9;
+  border: 1px solid black;
+  width: 445px;
+  height:35px;
+  border-radius: 4px;
+  align-items: center;
+  font-size: 26px;
+  margin-left: 0%;
+}
+
+.shop{
+  position: absolute;
+  top: 15px;
+  right: 10%;
+  word-spacing: 30px;
+
+}
+.src{
+  position: absolute;
+  top:-20%;
+  right: -55%;
+}
+
+ .con-1{
+  height: 100vh;
+ 
+ }
+
+.img-1 img{ 
+  height: 100vh;
+  width: 100%;
+  margin-bottom: 15px;
+
+}
+.dis{ color: #0aab1a;
+
+}
+.hey{ display: inline;
+  position: relative;
+ left: 80px;
+bottom: 500px;
+}
+.con-1 button{ 
+  width: 200px;
+  border-radius: 10px;
+  background-color: #0aab1a;
+
+}
+.con-1{ 
+  box-sizing: border-box;
+
+}
+.container-4{ 
+ 
+  height:100vh ;
+  background-color: #051922;
+  /* margin-top: 5%; */
+  color: #f8f9fc;
+
+}
+.container-4 li{
+  list-style: none;
+
+}
+.container-4 input{
+  border-radius: 10px;
+
+}
+.thodaimg{ 
+  margin:20px;
+margin-left: 300px;
+}
+.body{ 
+  height: 40px;
+  background-color: #cadbe4;
+  color: black;
+  border: 10px solid #cadbe4 ;
+
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+   */
+
+
+}
+.na{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+
+}
+
+  
+
+.abu{ position: absolute;
+  right: 18%;
+  top: 2px;
+
+}
+.me-auto a{ 
+  color: #0c0c0c;
+  text-decoration: none;
+  list-style: none;
+padding: 20px;
+margin-right:20px ;
+
+  
+
+}
+.me-auto{
+  position: relative;
+  top: 2px;
+right: 120px;
+  
+
+}
+.shop-1 a{ 
+  position: absolute;
+  top:-120%;
+  right: -95%;
+
+}
+.fo{
+  margin-left: 150px;
+  margin-top: 20px;
+ }
+
+
+.con{ display: flex;
+  justify-content: center;
+align-items: center;
+text-decoration: none;
+}
+.fo input{ width: 250px;
+  height: 35px;
+
+}
+.login{  
+  position: absolute;
+  top:-120%;
+  right: -50%;
+
+}
+.con img{ 
+
+  width: 50px;
+  position: relative;
+  left: -22%;
+  top: -3px;
+ background-color: #f8f9fc;
+ border-radius: 3px;
+
+}
+/*login css*/
+/* 
+/components/Login.css */
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 62%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+.hei{
+  position: relative;
+  left: 15%;
+  /* justify-content: center; */
+  /* align-items: center; */
+
+}
+
+
+
